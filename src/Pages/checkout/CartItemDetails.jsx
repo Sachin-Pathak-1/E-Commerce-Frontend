@@ -1,10 +1,10 @@
 import { FormatMoney } from "../../utils/money";
-import axios from "axios";
+import api from "../../api/axios";
 
 export function CartItemDetails({ cartItem , loadCart}) {
 
     const deletCartItem = async()=>{
-        await axios.delete(`/api/cart-items/${cartItem.productId}`);
+        await api.delete(`/api/cart-items/${cartItem.productId}`);
         await loadCart();
     }
 
