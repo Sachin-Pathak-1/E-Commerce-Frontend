@@ -2,7 +2,7 @@ import api from '../../api/axios';
 import { useEffect , useState } from 'react';
 import { Header } from '../../components/Header';
 import { ProductsGrid } from './ProductsGrid';
-import './homepage.css';
+import './HomePage.css';
 
 export function HomePage( {cart, loadCart} ) {
 
